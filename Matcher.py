@@ -268,7 +268,7 @@ def match_algo(leads_data):
         cif.PrimaryStreetPostDirAbbrev, cif.SecondaryAddressType, cif.SecondaryAddressNumber, cif.State, 
         cif.City, cif.SEGMENTSELECTFIELD, cif.gannett_segment, cif.DwellingType, cif.ZIP_Code
     FROM leads_processed1 lp
-    LEFT JOIN neustar_db.neustar cif
+    LEFT JOIN neustar_db cif
     ON lp.AddressNumber = cif.PrimaryStreetNumber 
     AND lp.PlaceName = cif.City 
     AND lp.StateName = cif.State 
