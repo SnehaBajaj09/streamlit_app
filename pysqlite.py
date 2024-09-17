@@ -10,7 +10,7 @@ import sqlite3
 
 # Step 1: Load CSV into a Pandas DataFrame
 neustar_df = pd.read_excel('C:\\Users\\sneha.bajaj\\Dropbox (eClerx Services Ltd.)\\add_match_streamlit\\data\\neustar_df.xlsx')  # Replace 'your_file.csv' with the path to your CSV file
-
+ 
 # Step 2: Create an SQLite database connection
 conn = sqlite3.connect('neustar.db')  # Use a file-based database; you can also use ':memory:' for an in-memory database
 
